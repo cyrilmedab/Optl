@@ -153,6 +153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shutdown
       objectReference: {fileID: 0}
+    - target: {fileID: 3346238649110475579, guid: dfa2b2f0ad69c5f47ac853925cbe0853, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8390228614821735636, guid: dfa2b2f0ad69c5f47ac853925cbe0853, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -259,6 +263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tablet Success
       objectReference: {fileID: 0}
+    - target: {fileID: 3346238649110475579, guid: ddef0d123d7f34b4098cda64dbfabdcf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8770169765136347804, guid: ddef0d123d7f34b4098cda64dbfabdcf, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -342,8 +350,40 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1184596037113929956, guid: ddef0d123d7f34b4098cda64dbfabdcf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1520866127953011796}
   m_SourcePrefab: {fileID: 100100000, guid: ddef0d123d7f34b4098cda64dbfabdcf, type: 3}
+--- !u!1 &885093208039124438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1184596037113929956, guid: ddef0d123d7f34b4098cda64dbfabdcf, type: 3}
+  m_PrefabInstance: {fileID: 2033652603309165874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1520866127953011796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885093208039124438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b3638c2f5db5b479ff24c2859713d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PokeFollowTransform: {fileID: 2458123569258040054}
+  m_SmoothingSpeed: 16
+  m_ReturnToInitialPosition: 1
+  m_ApplyIfChildIsTarget: 1
+  m_ClampToMaxDistance: 1
+  m_MaxDistance: 20
+  m_PokeFilter: {fileID: 0}
+--- !u!224 &2458123569258040054 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4478264784989358020, guid: ddef0d123d7f34b4098cda64dbfabdcf, type: 3}
+  m_PrefabInstance: {fileID: 2033652603309165874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7317534294612131758 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8770169765136347804, guid: ddef0d123d7f34b4098cda64dbfabdcf, type: 3}
@@ -574,6 +614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tablet Start
       objectReference: {fileID: 0}
+    - target: {fileID: 3346238649110475579, guid: 232cedea97fcf3047a53fdba5d7af753, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8770169765136347804, guid: 232cedea97fcf3047a53fdba5d7af753, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -657,8 +701,40 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1184596037113929956, guid: 232cedea97fcf3047a53fdba5d7af753, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1355368436233446137}
   m_SourcePrefab: {fileID: 100100000, guid: 232cedea97fcf3047a53fdba5d7af753, type: 3}
+--- !u!224 &354111441653540145 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4478264784989358020, guid: 232cedea97fcf3047a53fdba5d7af753, type: 3}
+  m_PrefabInstance: {fileID: 4237870081126146805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3080312282962805265 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1184596037113929956, guid: 232cedea97fcf3047a53fdba5d7af753, type: 3}
+  m_PrefabInstance: {fileID: 4237870081126146805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1355368436233446137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3080312282962805265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b3638c2f5db5b479ff24c2859713d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PokeFollowTransform: {fileID: 354111441653540145}
+  m_SmoothingSpeed: 16
+  m_ReturnToInitialPosition: 1
+  m_ApplyIfChildIsTarget: 1
+  m_ClampToMaxDistance: 1
+  m_MaxDistance: 20
+  m_PokeFilter: {fileID: 0}
 --- !u!224 &4862223546490097769 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8770169765136347804, guid: 232cedea97fcf3047a53fdba5d7af753, type: 3}
@@ -781,6 +857,10 @@ PrefabInstance:
     - target: {fileID: 3346238649110475579, guid: d8b4ab44aece46940854caa1fab0fb50, type: 3}
       propertyPath: m_Name
       value: Calming
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346238649110475579, guid: d8b4ab44aece46940854caa1fab0fb50, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6555407026328739022, guid: d8b4ab44aece46940854caa1fab0fb50, type: 3}
       propertyPath: m_LocalRotation.w
