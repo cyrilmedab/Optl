@@ -13,6 +13,8 @@ public class UIManager : MonoBehaviour
     public GameObject safetycheckUI;
     public GameObject stressmessageUI;
     public GameObject emergencyUI;
+    public GameObject endUI;
+
 
     // Animator for pallet movement
     public Animator moveranimator;
@@ -47,11 +49,13 @@ public class UIManager : MonoBehaviour
         step1UI.SetActive(false);
         step2UI.SetActive(false);
         step3UI.SetActive(false);
+        screenonUI.SetActive(false);
         safetycheckUI.SetActive(false);
         stressmessageUI.SetActive(false);
         emergencyUI.SetActive(false);
+        endUI.SetActive(false);
 
-           if (alarmLightsPrefab != null)
+        if (alarmLightsPrefab != null)
         {
             alarmLightsPrefab.SetActive(false);
         }
@@ -70,6 +74,16 @@ public class UIManager : MonoBehaviour
 
     }
 
+    public void EndAlarm()
+    {
+        StopAlarmAudio();
+        endUI.SetActive(true);
+        PlayPanelAudio();
+        StopFlashingLights();
+        emergencyUI.SetActive(false);
+
+    }
+
 
     public void StartMachine()
     {
@@ -78,7 +92,10 @@ public class UIManager : MonoBehaviour
             step1UI.SetActive(false);
             step2UI.SetActive(true);
             screenonUI.SetActive(true);
-       
+
+            PlayButtonAudio();
+
+
     }
 
     private void Update()
@@ -97,6 +114,20 @@ public class UIManager : MonoBehaviour
             }
         }
     }
+
+    private void StopFlashingLights()
+    {
+        if (isFlashingLights)
+        {
+            isFlashingLights = false; // Stop the coroutine loop
+            if (alarmLightsPrefab != null)
+            {
+                alarmLightsPrefab.SetActive(false); // Ensure the lights are turned off
+            }
+        }
+
+    }
+
 
     private void StartFlashingLights()
     {
@@ -128,11 +159,19 @@ public class UIManager : MonoBehaviour
         emergencyUI.SetActive(true);
     }
 
-     private void PlayPanelAudio()
+    private void PlayPanelAudio()
     {
         if (panelAudio != null)
         {
             panelAudio.Play();
+        }
+    }
+
+    private void PlayButtonAudio()
+    {
+        if (buttonAudio != null)
+        {
+            buttonAudio.Play();
         }
     }
 
@@ -157,6 +196,14 @@ public class UIManager : MonoBehaviour
         if (alarmLoopAudio != null)
         {
             alarmLoopAudio.Play();
+        }
+    }
+
+    private void StopAlarmAudio()
+    {
+        if (alarmLoopAudio != null)
+        {
+            alarmLoopAudio.Stop();
         }
     }
 }

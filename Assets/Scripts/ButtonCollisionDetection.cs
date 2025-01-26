@@ -3,22 +3,32 @@ using UnityEngine.Events;
 
 public class ButtonCollisionDetection : MonoBehaviour
 {
-    // UnityEvent that can be assigned from the Inspector
     [System.Serializable]
     public class CollisionEvent : UnityEvent<GameObject> { }
 
-    // Event that gets triggered on collision
     public CollisionEvent OnCollisionEnterEvent;
     private bool hasCollided = false;
+    private bool isInitialized = false;
+
+    private void Start()
+    {
+        // Delay to let the colliders settle
+        Invoke("EnableCollisionDetection", 0.5f); // Delay collision detection for 0.5 seconds
+    }
+
+    private void EnableCollisionDetection()
+    {
+        isInitialized = true;
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (!hasCollided) {
-            Debug.Log("Button Worked");
+        if (isInitialized && !hasCollided) // Only trigger after initialization
+        {
+            Debug.Log($"Trigger entered by: {collision.gameObject.name}");
             hasCollided = true;
             OnCollisionEnterEvent.Invoke(collision.gameObject);
+            Debug.Log("Button Worked");
         }
-        // Trigger the event, passing the collided object as a parameter
-  
     }
 }
