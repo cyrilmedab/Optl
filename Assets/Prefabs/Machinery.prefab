@@ -3299,7 +3299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6908458186675916448
 Transform:
   m_ObjectHideFlags: 0
@@ -6396,7 +6396,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2508723659915971431
 Transform:
   m_ObjectHideFlags: 0
@@ -6677,6 +6677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3824105440813073692}
+  - component: {fileID: 7505622735243673375}
   m_Layer: 0
   m_Name: Moving Pallet
   m_TagString: Untagged
@@ -6718,6 +6719,28 @@ Transform:
   - {fileID: 4856924850055950307}
   m_Father: {fileID: 1802752599962191642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &7505622735243673375
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8996659200095318917}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 14f4560e761078744821b8a589efd656, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9051585778642399636
 GameObject:
   m_ObjectHideFlags: 0
