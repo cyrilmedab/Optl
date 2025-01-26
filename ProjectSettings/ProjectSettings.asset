@@ -817,7 +817,7 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   scriptingDefineSymbols:
-    Standalone: C3D_VARJOXR
+    Standalone: C3D_DEFAULT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

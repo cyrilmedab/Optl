@@ -1,0 +1,149 @@
+*****************************
+***********SYSTEM************
+*****************************
+Unity Version:6000.0.34f1
+OS:Windows 11  (10.0.26100) 64bit
+System Time: 1/25/2025 9:56:19 PM
+
+*****************************
+***********PROJECT***********
+*****************************
+Scripting Define Symbols: C3D_VARJOXR
+Packages:
+  com.cognitive3d.c3d-sdk 1.6.5
+  com.openbci.sdk 0.0.0
+  com.unity.2d.sprite 1.0.0
+  com.unity.ai.navigation 2.0.5
+  com.unity.collab-proxy 2.6.0
+  com.unity.ide.rider 3.0.31
+  com.unity.ide.visualstudio 2.0.22
+  com.unity.inputsystem 1.11.2
+  com.unity.multiplayer.center 1.0.0
+  com.unity.render-pipelines.universal 17.0.3
+  com.unity.splines 2.7.2
+  com.unity.test-framework 1.4.5
+  com.unity.timeline 1.8.7
+  com.unity.ugui 2.0.0
+  com.unity.visualscripting 1.9.5
+  com.unity.xr.interaction.toolkit 3.0.7
+  com.unity.xr.oculus 4.4.0
+  com.varjo.xr 3.7.3
+  com.unity.modules.accessibility 1.0.0
+  com.unity.modules.ai 1.0.0
+  com.unity.modules.androidjni 1.0.0
+  com.unity.modules.animation 1.0.0
+  com.unity.modules.assetbundle 1.0.0
+  com.unity.modules.audio 1.0.0
+  com.unity.modules.cloth 1.0.0
+  com.unity.modules.director 1.0.0
+  com.unity.modules.imageconversion 1.0.0
+  com.unity.modules.imgui 1.0.0
+  com.unity.modules.jsonserialize 1.0.0
+  com.unity.modules.particlesystem 1.0.0
+  com.unity.modules.physics 1.0.0
+  com.unity.modules.physics2d 1.0.0
+  com.unity.modules.screencapture 1.0.0
+  com.unity.modules.terrain 1.0.0
+  com.unity.modules.terrainphysics 1.0.0
+  com.unity.modules.tilemap 1.0.0
+  com.unity.modules.ui 1.0.0
+  com.unity.modules.uielements 1.0.0
+  com.unity.modules.umbra 1.0.0
+  com.unity.modules.unityanalytics 1.0.0
+  com.unity.modules.unitywebrequest 1.0.0
+  com.unity.modules.unitywebrequestassetbundle 1.0.0
+  com.unity.modules.unitywebrequestaudio 1.0.0
+  com.unity.modules.unitywebrequesttexture 1.0.0
+  com.unity.modules.unitywebrequestwww 1.0.0
+  com.unity.modules.vehicles 1.0.0
+  com.unity.modules.video 1.0.0
+  com.unity.modules.vr 1.0.0
+  com.unity.modules.wind 1.0.0
+  com.unity.modules.xr 1.0.0
+SDK Version: 1.6.5
+Api Key: ****CPK4
+Developer Key: ****E1MN
+Enable Logging: True
+Enable Development Logging: False
+Gaze Type: Physics
+Snapshot Interval: 0.1
+Dynamic Object Search in Parent: True
+Dynamic Object Layer Mask: -1
+Track GPS Location: False
+GPS Accuracy: 2
+Record Floor Position: True
+Automatic Send Timer: 10
+Gaze Snapshot Batch Size: 256
+Event Snapshot Batch Size: 256
+Dynamic Snapshot Batch Size: 512
+Sensor Snapshot Batch Size: 512
+Fixation Snapshot Batch Size: 256
+Save Data to Local Cache if no internet connection: True
+Cache Size (bytes): 104857600
+Cache Size (mb): 100.0 MB
+Custom Protocol: https
+Custom Gateway: data.cognitive3d.com
+Custom Viewer: viewer.cognitive3d.com/scene/
+Custom Dashboard: app.cognitive3d.com
+Texture Export Quality: 2
+Export Lowest LOD from LODGroup Components: True
+Scene Settings:
+  └─MainScene-Peter
+     ├─Scene Id: 
+     ├─Scene Path: Assets/Scenes/MainScene-Peter.unity
+     ├─Last Revision: 
+     ├─Version Number: 0
+     └─Version Id: 0
+
+*****************************
+********CURRENT SCENE********
+*****************************
+Scene Name: MainScene-Peter
+Scene Id: 
+Scene Path: Assets/Scenes/MainScene-Peter.unity
+Last Revision: 
+Version Number: 0
+Version Id: 0
+Scene Size (mb): 43.70
+Main Camera GameObject: Main Camera
+Manager Initialize On Start: True
+Manager Startup Delay Time (s): 0
+
+*****************************
+****CURRENT SCENE OBJECTS****
+*****************************
+Dynamic Object Count: 3
+  ├─Right Controller
+  │  ├─Mesh Name: right_controller
+  │  ├─Has Collider: false
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: false
+  ├─Left Controller
+  │  ├─Mesh Name: left_controller
+  │  ├─Has Collider: false
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: false
+  └─Intro
+     ├─Mesh Name: intro
+     ├─Has Collider: false
+     ├─Has Children: true
+     └─Has Child Colliders: false
+
+*****************************
+********EXPORT FOLDER********
+*****************************
+/Cognitive3D_SceneExplorerExport (44mb)
+   /MainScene-Peter (43.70mb)
+      371857150-879794Main.png (0.01mb)
+      371857150-879806Main.png (0.00mb)
+      371857150-879814Main.png (0.00mb)
+      371857150929200Main.png (0.00mb)
+      371857150929232Main.png (0.00mb)
+      371857150929258Main.png (0.00mb)
+      371857150929262Main.png (0.00mb)
+      371857150929288Main.png (0.00mb)
+      371857150929290Main.png (0.00mb)
+      371857150929292Main.png (0.00mb)
+      scene.bin (40.69mb)
+      scene.gltf (2.99mb)
+      settings.json (0.00mb)

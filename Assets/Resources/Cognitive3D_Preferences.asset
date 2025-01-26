@@ -44,4 +44,10 @@ MonoBehaviour:
   IncludeDisabledDynamicObjects: 1
   TextureResize: 2
   ExportSceneLODLowest: 1
-  sceneSettings: []
+  sceneSettings:
+  - SceneName: MainScene-Peter
+    SceneId: 04eda613-3cd1-4187-b6ba-09f79894932e
+    ScenePath: Assets/Scenes/MainScene-Peter.unity
+    LastRevision: 01/26/2025 03:26:28
+    VersionNumber: 3
+    VersionId: 7726
