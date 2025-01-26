@@ -4,24 +4,42 @@ using OpenBCI.Network.Streams;
 public class AlphaPillar : MonoBehaviour
 {
 
-    public GameObject pillar;
+    public GameObject alphaPillar;
+    public GameObject betaPillar;
+    public GameObject gammaPillar;
+    public GameObject deltaPillar;
     [SerializeField] private AverageBandPowerStream Stream;
 
-    private float pillarHeight;
+    private float alphaPillarHeight;
+    private float betaPillarHeight;
+    private float gammaPillarHeight;
+    private float deltaPillarHeight;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        pillarHeight = 0f;
+        alphaPillarHeight = 0f;
+        betaPillarHeight = 0f;
+        deltaPillarHeight = 0f;
+        gammaPillarHeight = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Alpha: " + Stream.AverageBandPower.Alpha);
+        //    Debug.Log("Alpha: " + Stream.AverageBandPower.Alpha);
 
-        pillarHeight = Stream.AverageBandPower.Alpha;
-        pillar.transform.localScale = new Vector3(1, pillarHeight, 1);
+        alphaPillarHeight = Stream.AverageBandPower.Alpha;
+        alphaPillar.transform.localScale = new Vector3(1, alphaPillarHeight, 1);
+
+        betaPillarHeight = Stream.AverageBandPower.Beta;
+        betaPillar.transform.localScale = new Vector3(1, betaPillarHeight, 1);
+
+        deltaPillarHeight = Stream.AverageBandPower.Delta;
+        deltaPillar.transform.localScale = new Vector3(1, deltaPillarHeight, 1);
+
+        gammaPillarHeight = Stream.AverageBandPower.Gamma;
+        gammaPillar.transform.localScale = new Vector3(1, gammaPillarHeight, 1);
 
     }
 }

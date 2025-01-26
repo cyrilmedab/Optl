@@ -334,6 +334,57 @@ Transform:
   - {fileID: 832575519}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &686496259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 686496261}
+  - component: {fileID: 686496260}
+  m_Layer: 0
+  m_Name: EyeTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &686496260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686496259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3a8b985e4ea4846bd1f79fea604a3b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GazeSmoothing: 0.1
+  GazeDistance: 0.1
+  FixationPoint: {fileID: 0}
+  PupilSize: {x: 0, y: 0}
+  IrisSize: {x: 0, y: 0}
+  Openness: {x: 0, y: 0}
+  GazeDirection: {x: 0, y: 0, z: 0}
+--- !u!4 &686496261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686496259}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.5587335, y: 1.2187852, z: -3.8615386}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &784262721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -359,8 +410,16 @@ PrefabInstance:
       value: 0.14509805
       objectReference: {fileID: 0}
     - target: {fileID: 1733187808660114396, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
+      propertyPath: m_text
+      value: Delta
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733187808660114396, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798873502323221806, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
+      propertyPath: m_Name
+      value: Gamma
       objectReference: {fileID: 0}
     - target: {fileID: 2325213530400325729, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
@@ -375,8 +434,16 @@ PrefabInstance:
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 4121330417186925740, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
+      propertyPath: m_text
+      value: Gamma
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121330417186925740, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164295732639007326, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
+      propertyPath: m_Name
+      value: Delta
       objectReference: {fileID: 0}
     - target: {fileID: 4244311037393260510, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
       propertyPath: m_Color.b
@@ -393,6 +460,18 @@ PrefabInstance:
     - target: {fileID: 5705263762000717768, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107928015029698412, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107928015029698412, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.14509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107928015029698412, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7857928
       objectReference: {fileID: 0}
     - target: {fileID: 6274783530399063070, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
       propertyPath: m_text
@@ -450,6 +529,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8502748987391563804, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.20111826
+      objectReference: {fileID: 0}
+    - target: {fileID: 8502748987391563804, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.14509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 8502748987391563804, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9764706
+      objectReference: {fileID: 0}
     - target: {fileID: 8562340865673958812, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
       propertyPath: m_Name
       value: Beta
@@ -469,7 +560,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9216328069574741525, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2026933051}
   m_SourcePrefab: {fileID: 100100000, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
 --- !u!1 &832575517
 GameObject:
@@ -577,6 +671,30 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 735e0ea3637314c43a95d4e2ddf73c17, type: 3}
+--- !u!1 &2026933047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9216328069574741525, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
+  m_PrefabInstance: {fileID: 784262721}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2026933051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026933047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2444aaf2e945989388894813234883, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Port: 0
+  AverageBandPower:
+    Alpha: 0
+    Beta: 0
+    Gamma: 0
+    Delta: 0
+    Theta: 0
 --- !u!1001 &2113023306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -800,3 +918,4 @@ SceneRoots:
   - {fileID: 410673227}
   - {fileID: 3719341978868436901}
   - {fileID: 784262721}
+  - {fileID: 686496261}
