@@ -1030,6 +1030,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1595152967}
     - target: {fileID: 151809121336802075, guid: 2f58570b944a63e43935d32dd7c3df78, type: 3}
+      propertyPath: emergencyUIdelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 151809121336802075, guid: 2f58570b944a63e43935d32dd7c3df78, type: 3}
       propertyPath: malfunctionAudio
       value: 
       objectReference: {fileID: 712988490}
