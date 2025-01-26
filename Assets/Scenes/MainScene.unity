@@ -1197,6 +1197,24 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1326717479}
   m_SourcePrefab: {fileID: 100100000, guid: e857280aba9256f43bddfb2fe714b373, type: 3}
+--- !u!114 &1542212382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682381008}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Device: 0
+  m_PoseSource: 2
+  m_PoseProviderComponent: {fileID: 0}
+  m_TrackingType: 0
+  m_UpdateType: 0
+  m_UseRelativeTransform: 0
 --- !u!95 &1571268919 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 7505622735243673375, guid: edf15c226469f6f43bbeaab3a54742b2, type: 3}
@@ -1277,6 +1295,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8350675522283510772, guid: c9fac7a2456eb4675acf6f5ed636a414, type: 3}
+      propertyPath: Port
+      value: 12351
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350675522283510772, guid: c9fac7a2456eb4675acf6f5ed636a414, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -1340,6 +1362,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7000507341591859744, guid: c9fac7a2456eb4675acf6f5ed636a414, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1682381015}
+    - targetCorrespondingSourceObject: {fileID: 7000507341591859744, guid: c9fac7a2456eb4675acf6f5ed636a414, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1542212382}
   m_SourcePrefab: {fileID: 100100000, guid: c9fac7a2456eb4675acf6f5ed636a414, type: 3}
 --- !u!1 &1682381008 stripped
 GameObject:
@@ -1963,6 +1988,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 812983080741199922, guid: cb5f373661b7d2e4c80c41160f624b36, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 815550294718385495, guid: cb5f373661b7d2e4c80c41160f624b36, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -2010,6 +2039,10 @@ PrefabInstance:
     - target: {fileID: 989484887866947900, guid: cb5f373661b7d2e4c80c41160f624b36, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 989484887866947902, guid: cb5f373661b7d2e4c80c41160f624b36, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 989484888180751339, guid: cb5f373661b7d2e4c80c41160f624b36, type: 3}
       propertyPath: m_Layer

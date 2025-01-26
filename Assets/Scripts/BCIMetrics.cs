@@ -3,6 +3,7 @@ using OpenBCI.Network.Streams;
 using TMPro;
 using OpenBCI.Network;
 using OpenBCI.UI.TimeSeries.Graphs;
+using UnityEngine.UI;
 
 public class BCIMetrics : MonoBehaviour
 {
@@ -19,10 +20,11 @@ public class BCIMetrics : MonoBehaviour
     public GameObject deltaPillar;
     public GameObject deltaValue;
 
-
+    public GameObject focus;
 
     [SerializeField] private AverageBandPowerStream Stream;
     [SerializeField] private PPGMetricsStream ppgStream;
+    [SerializeField] private FocusStream focusStream;
 
     private float ppgPillarHeight;
     private float alphaPillarHeight;
@@ -49,6 +51,7 @@ public class BCIMetrics : MonoBehaviour
     {
         //    Debug.Log("Alpha: " + Stream.AverageBandPower.Alpha);
         ppgArray = ppgStream.GetHeartRateData();
+
         //Debug.Log("PPG: " + ppgArray);
 
         if (ppgStream.GetHeartRateData().Length > 0)
@@ -77,6 +80,14 @@ public class BCIMetrics : MonoBehaviour
         gammaPillar.GetComponent<RectTransform>().sizeDelta = new Vector2(100 * gammaPillarHeight, 50);
         gammaValue.GetComponent<TextMeshProUGUI>().text =  gammaPillarHeight.ToString();
 
-
+        if (focusStream.Focus < 1)
+        {
+            focus.GetComponent<Image>().color = Color.red;
+                
+        }
+        else
+        {
+            focus.GetComponent<Image>().color = Color.green;
+        }
     }
 }
