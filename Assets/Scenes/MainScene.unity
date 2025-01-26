@@ -784,6 +784,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.14509805
       objectReference: {fileID: 0}
+    - target: {fileID: 1403506751953953997, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
+      propertyPath: m_Name
+      value: BetaBar
+      objectReference: {fileID: 0}
     - target: {fileID: 1433520118497270724, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -1126,15 +1130,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7617713110808765120, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.589
+      value: -6.209
       objectReference: {fileID: 0}
     - target: {fileID: 7617713110808765120, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.345
+      value: 1.019
       objectReference: {fileID: 0}
     - target: {fileID: 7617713110808765120, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.942
+      value: -4.054
       objectReference: {fileID: 0}
     - target: {fileID: 7617713110808765120, guid: 362114e5c4d00624ca7e7c445eb4ad6e, type: 3}
       propertyPath: m_LocalRotation.w

@@ -1,10 +1,12 @@
 using UnityEngine;
 using OpenBCI.Network.Streams;
+using TMPro;
 
 public class AlphaPillar : MonoBehaviour
 {
 
     public GameObject alphaPillar;
+    public GameObject alphaValue;
     public GameObject betaPillar;
     public GameObject gammaPillar;
     public GameObject deltaPillar;
@@ -18,10 +20,12 @@ public class AlphaPillar : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        alphaPillarHeight = 0f;
+        alphaPillarHeight = 20f;
         betaPillarHeight = 0f;
         deltaPillarHeight = 0f;
         gammaPillarHeight = 0f;
+        
+
     }
 
     // Update is called once per frame
@@ -30,7 +34,8 @@ public class AlphaPillar : MonoBehaviour
         //    Debug.Log("Alpha: " + Stream.AverageBandPower.Alpha);
 
         alphaPillarHeight = Stream.AverageBandPower.Alpha;
-        alphaPillar.GetComponent<RectTransform>().sizeDelta = new Vector2(20, 50); //= new Vector3( alphaPillarHeight, 1, 1);
+        alphaPillar.GetComponent<RectTransform>().sizeDelta = new Vector2(alphaPillarHeight, 50); //= new Vector3( alphaPillarHeight, 1, 1);
+        alphaValue.GetComponent<TextMeshProUGUI>().text = alphaPillarHeight.ToString();
 
         betaPillarHeight = Stream.AverageBandPower.Beta;
         betaPillar.GetComponent<RectTransform>().sizeDelta = new Vector2(betaPillarHeight, 50);
