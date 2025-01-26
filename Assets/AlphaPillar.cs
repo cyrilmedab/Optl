@@ -2,7 +2,7 @@ using UnityEngine;
 using OpenBCI.Network.Streams;
 using TMPro;
 
-public class BCIMetrics : MonoBehaviour
+public class AlphaPillar : MonoBehaviour
 {
 
     public GameObject alphaPillar;
@@ -23,7 +23,7 @@ public class BCIMetrics : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        alphaPillarHeight = 0f;
+        alphaPillarHeight = 20f;
         betaPillarHeight = 0f;
         deltaPillarHeight = 0f;
         gammaPillarHeight = 0f;
