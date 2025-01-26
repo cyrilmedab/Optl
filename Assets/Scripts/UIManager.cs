@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     public GameObject step3UI;
     public GameObject screenonUI;
     public GameObject safetycheckUI;
+    public GameObject screenEmergencyUI;
     public GameObject stressmessageUI;
     public GameObject emergencyUI;
     public GameObject endUI;
@@ -51,6 +52,7 @@ public class UIManager : MonoBehaviour
         step3UI.SetActive(false);
         screenonUI.SetActive(false);
         safetycheckUI.SetActive(false);
+        screenEmergencyUI.SetActive(false);
         stressmessageUI.SetActive(false);
         emergencyUI.SetActive(false);
         endUI.SetActive(false);
@@ -59,8 +61,6 @@ public class UIManager : MonoBehaviour
         {
             alarmLightsPrefab.SetActive(false);
         }
-
-    
 
         // Start the coroutine to show the starting UI with a delay
         StartCoroutine(ShowStartingUIDelayed());
@@ -71,7 +71,6 @@ public class UIManager : MonoBehaviour
         yield return new WaitForSeconds(initialDelay);
         startingUI.SetActive(true);
         PlayPanelAudio();
-
     }
 
     public void EndAlarm()
@@ -81,7 +80,6 @@ public class UIManager : MonoBehaviour
         PlayPanelAudio();
         StopFlashingLights();
         emergencyUI.SetActive(false);
-
     }
 
 
@@ -94,8 +92,6 @@ public class UIManager : MonoBehaviour
             screenonUI.SetActive(true);
 
             PlayButtonAudio();
-
-
     }
 
     private void Update()
@@ -111,6 +107,8 @@ public class UIManager : MonoBehaviour
                 PlayAlarmAudio();
                 StartFlashingLights();
 
+                safetycheckUI.SetActive(false);
+                screenEmergencyUI.SetActive(true);
             }
         }
     }
