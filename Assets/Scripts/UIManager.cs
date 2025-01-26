@@ -31,7 +31,7 @@ public class UIManager : MonoBehaviour
     public float stressMessageDuration = 3f;
     public float emergencyUIdelay = 5f;
 
-    private bool isCrankTurned = false; 
+
     private bool stressUITriggered = false; 
     private bool isFlashingLights = false;
 
@@ -73,13 +73,12 @@ public class UIManager : MonoBehaviour
 
     public void StartMachine()
     {
-        if (!isCrankTurned)
-        {
-            isCrankTurned = true;
+           Debug.Log("StartMachine button pressed!");
+
             step1UI.SetActive(false);
             step2UI.SetActive(true);
             screenonUI.SetActive(true);
-        }
+       
     }
 
     private void Update()
