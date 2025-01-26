@@ -30,16 +30,16 @@ public class AlphaPillar : MonoBehaviour
         //    Debug.Log("Alpha: " + Stream.AverageBandPower.Alpha);
 
         alphaPillarHeight = Stream.AverageBandPower.Alpha;
-        alphaPillar.transform.localScale = new Vector3(1, alphaPillarHeight, 1);
+        alphaPillar.transform.localScale = new Vector3( alphaPillarHeight, 1, 1);
 
         betaPillarHeight = Stream.AverageBandPower.Beta;
-        betaPillar.transform.localScale = new Vector3(1, betaPillarHeight, 1);
+        betaPillar.transform.localScale = new Vector3( betaPillarHeight, 1,1);
 
         deltaPillarHeight = Stream.AverageBandPower.Delta;
-        deltaPillar.transform.localScale = new Vector3(1, deltaPillarHeight, 1);
+        deltaPillar.transform.localScale = new Vector3(deltaPillarHeight, 1, 1);
 
         gammaPillarHeight = Stream.AverageBandPower.Gamma;
-        gammaPillar.transform.localScale = new Vector3(1, gammaPillarHeight, 1);
+        gammaPillar.transform.localScale = new Vector3(gammaPillarHeight, 1, 1);
 
     }
 }
