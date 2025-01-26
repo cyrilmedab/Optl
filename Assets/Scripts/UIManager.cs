@@ -71,7 +71,7 @@ public class UIManager : MonoBehaviour
     }
 
 
-    public void OnCrankTurned()
+    public void StartMachine()
     {
         if (!isCrankTurned)
         {
